@@ -8,4 +8,9 @@ RUN set -xe \
     && apt-get update \
     && DEBIAN_FRONTEND=noninteractive apt-get install -y python-openstackclient python3-openstackclient
 
-CMD [ "openstack" ]
+ADD openstack.sh /app/
+RUN chmod a+rx /app/openstack.sh
+
+CMD [ "--help" ]
+ENTRYPOINT [ "/app/openstack.sh" ]
+
