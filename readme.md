@@ -3,7 +3,7 @@
 ## Usage
 
 ```bash
-docker run -ti --rm herveleclerc/docker-python-openstackclient
+docker run -ti --rm herveleclerc/docker-python-openstackclient:pike
 ```
 
 Will give you all the commands available for the openstack client
@@ -12,7 +12,7 @@ Will give you all the commands available for the openstack client
 ```bash
 docker run -ti --rm \
        -v $HOME/openstack/local.rc:/app/openstack.rc \
-       herveleclerc/docker-python-openstackclient image list
+       herveleclerc/docker-python-openstackclient:pike image list
 ```
 
 Will use local rc file with configuration environment variable for openstack. The file must be mounted on **/app/openstack.rc**
@@ -22,7 +22,7 @@ docker run -ti --rm \
        -e RC=/tmp \
        -e RCFILE=os.rc \
        -v $HOME/openstack/local.rc:/tmp/os.rc \
-       herveleclerc/docker-python-openstackclient image list
+       herveleclerc/docker-python-openstackclient:pike image list
 ```
 
 Will use local rc file with configuration environment variable for openstack. Environment variable RC (directory) and RCFILE (file) can be used to change mount point
@@ -41,7 +41,7 @@ docker run -ti --rm \
       -e OS_IMAGE_API_VERSION=2 \
       -e OS_NETWORK_API_VERSION=2 \
       -e OS_REGION_NAME="as-south-0" \
-       herveleclerc/docker-python-openstackclient image list
+       herveleclerc/docker-python-openstackclient:pike image list
 ```
 
 
