@@ -33,7 +33,7 @@ You can also use environment variables to configure openstack client
 ```bash
 docker run -ti --rm \
       -e OS_AUTH_URL="https://os.example.com/v3" \
-      -e export OS_PROJECT_ID="projectID" \
+      -e OS_PROJECT_ID="projectID" \
       -e OS_USER_DOMAIN_ID="domainID" \
       -e OS_USERNAME="hleclerc" \
       -e OS_PASSWORD="the pass" \
