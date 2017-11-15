@@ -44,6 +44,10 @@ docker run -ti --rm \
        herveleclerc/docker-python-openstackclient:pike image list
 ```
 
+## TAGS
+- latest=pike
+- ocata
+- mitaka
 
 
 
